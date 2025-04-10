@@ -2,8 +2,8 @@ streamlit
 langchain>=0.1.14
 langchain-community
 transformers
-faiss-cpu
 sentence-transformers
+faiss-cpu
 unstructured[local-inference]
 beautifulsoup4
 requests
