@@ -48,8 +48,9 @@ def setup_rag():
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     documents = splitter.create_documents([scraped_text])
 
-    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-    embedding_model = HuggingFaceEmbeddings(model=model)
+    embedding_model = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
     vectorstore = FAISS.from_documents(documents, embedding_model)
     pipe = pipeline("text2text-generation",
                     model="google/flan-t5-base", max_length=256)
