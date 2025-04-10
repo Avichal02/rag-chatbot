@@ -1,0 +1,10 @@
+streamlit
+langchain
+transformers
+faiss-cpu
+sentence-transformers
+unstructured[local-inference]
+beautifulsoup4
+requests
+pdfplumber
+python-docx
