@@ -3,9 +3,11 @@ import pdfplumber
 from docx import Document
 from bs4 import BeautifulSoup
 import requests
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
+
 from transformers import pipeline
 from langchain.llms import HuggingFacePipeline
 from langchain.chains import RetrievalQA
