@@ -1,0 +1,35 @@
+# 🤖 RAG Chatbot using Streamlit, LangChain & HuggingFace
+
+This is a custom-built Retrieval-Augmented Generation (RAG) chatbot that answers questions **only from your own data** (PDFs, DOCX, and a website). It uses HuggingFace's FLAN-T5 model, LangChain for chaining and retrieval, FAISS for vector storage, and Streamlit for the web interface.
+
+---
+
+## ✅ Features
+- 💬 Asks questions from PDFs, DOCX, and website content
+- 🧠 Uses `sentence-transformers/all-MiniLM-L6-v2` for semantic search
+- 🤖 Uses `google/flan-t5-base` for generating context-based answers
+- 🔒 Returns “I don’t know” when no relevant data is found
+- 🌐 Clean Streamlit interface
+
+---
+
+## ⚙️ Installation & Setup
+
+### 🔸 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/rag-chatbot.git
+cd rag-chatbot
+pip install -r requirements.txt
+Add Your Files
+Place the following files in the project root:
+
+file1.pdf
+
+file2.pdf
+
+file3.pdf
+
+file4.pdf
+
+document.docx
